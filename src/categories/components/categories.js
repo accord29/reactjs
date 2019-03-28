@@ -6,12 +6,12 @@ import Search from '../../widgets/containers/search';
 function Categories(props) {
   return (
     <div className="Categories">
-    <Search />
+      <Search />
       {
-        props.categories.map((item) => {
+        props.categories.map((item) =>{
           return (
             <Category
-              key= {item.id}
+              key={item.id}
               {...item}
               handleOpenModal={props.handleOpenModal}
             />

@@ -12,4 +12,5 @@ function FullScreen(props) {
   )
 }
 
+
 export default FullScreen;

@@ -3,16 +3,16 @@ import RegularError from '../components/regular-error';
 
 class HandleError extends Component {
   state = {
-    HandleError: false,
+    handleError: false,
   }
   componentDidCatch(error, info) {
     this.setState({
-      HandleError: true,
+      handleError: true,
     })
     // envía este error a un servicio como Sentry
   }
   render() {
-    if (this.state.HandleError) {
+    if (this.state.handleError) {
       return (
         <RegularError />
       )
@@ -21,4 +21,4 @@ class HandleError extends Component {
   }
 }
 
-export default HandleError;
+export default HandleError

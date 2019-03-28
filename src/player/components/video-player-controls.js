@@ -9,4 +9,4 @@ function VideoPlayerControls(props) {
   )
 }
 
-export default VideoPlayerControls;
+export default VideoPlayerControls
